@@ -6,23 +6,17 @@ body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 #background {
-    /*background-image: url("Background.svg");*/
-    /*background-repeat: no-repeat;*/
-    /* Create the parallax scrolling effect */
-    /*background-attachment: fixed;
-    background-position: 0 80%;
-    background-repeat: no-repeat;
-    background-size: cover;*/
     width: 100vw;
     max-width: 100%;
 }
 .nav {
     width: 100%;
-    background-color: white;
+    color: #CCCCCC;
+    background-color: #333333;
 }
 
 .nav-link {
-    color: black;
+    color: #CCCCCC;
 }
 
 .nav-link:hover {
@@ -30,17 +24,15 @@ body {
 }
 
 section {
-    height: 50vh;
     background-color: white;
 }
 
 #home {
-    margin-top: -115vh;
-    height: 100vh;
     background-color: transparent;
     border: none;
     text-align: center;
-    position: relative;
+    margin-top: -100vh;
+    height: 100vh;
 }
 
 #home h1 {
@@ -48,20 +40,7 @@ section {
     font-size: 10em;
     width: 100%;
     display: block;
-}
-#about {
-    margin-top: 30vh;
-    height: 100vh;
-}
-#aboutHeader {
-    padding-top: 30px;
-}
-
-.centered {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    opacity: 0;
 }
 
 /* Begin background animation */
@@ -101,7 +80,6 @@ path[id^="path135"], path[id^="path136"], path[id^="path137"] {
 
 /* Begin Scroll down call to action */
 #home a {
-    padding-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,6 +135,23 @@ path[id^="path135"], path[id^="path136"], path[id^="path137"] {
     }
     100% {
         opacity: 0;
+    }
+}
+
+.pop-in {
+    opacity: 0;
+    animation: pop-in .6s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem) scale(.8);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
     }
 }
 /* End */
