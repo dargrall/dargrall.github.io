@@ -28,8 +28,8 @@
     <div class="container">
         <section id="landing" class="row">
             <div class="col text-center align-elements-center">
-                <h1 class="pop-in">Welcome to my Homepage!</h1></br>
-                <a class="pop-in" href="#about"><span></span><span></span><span></span></a>
+                <h1 class="pop-in display-1">Welcome to my Homepage!</h1></br>
+                <a class="pop-in arrows-down" href="#about"><span></span><span></span><span></span></a>
             </div>
         </section>
         <section id="about" class="row align-items-center">
@@ -38,48 +38,34 @@
                 <img class="headerIcon"src="icons/person-lines-fill.svg">
             </div>
             <div class="text-center col-8">
-                <h1>Working on it...</h1>
+                <h1>In progress...</h1>
+<!--                <a class="arrows-down" href="#projects"><span></span><span></span><span></span></a>-->
             </div>
         </section>
         <section id="projects" class="row align-items-center">
             <div class="col-8">
-                <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="fractal_tree.jpg" class="d-block" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Project 1</h5>
-                                <p>Some incredibly awesome project</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="fractal_tree.jpg" class="d-block" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Project 2</h5>
-                                <p>...and another one</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="fractal_tree.jpg" class="d-block" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Project 3</h5>
-                                <p>...and another one</p>
+                <h1>Here is a list of projects I am working on at the moment:</h1>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <img src="fractal_tree.jpg" class="card-image-top" alt="..."/>
+                            <div class="card-body">
+                                <h5 class="card-title">p5.js</h5>
+                                <p class="card-text">Small creative coding projects using the p5.js library.</p>
+                                <a href="#projects-p5js" class="btn btn-primary">Show more</a>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <img src="timetable_blue.svg" class="card-image-top" alt="..."/>
+                            <div class="card-body">
+                                <h5 class="card-title">Semestertimetable</h5>
+                                <p class="card-text">Web-Application for planning my studies.</p>
+                                <a href="#" class="btn btn-primary">Show more</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-4">
@@ -87,6 +73,49 @@
                 <img class="headerIcon"src="icons/card-list.svg">
             </div>
         </section>
+        <!--<section id="projects-p5js">
+            <div id="project-carousel" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="fractal_tree.jpg" class="d-block" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fractal Tree</h5>
+                            <p>
+                                Fractal Tree that is created step by step by clicking the mouse. Mouse position controls
+                                the angle of new branches.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="drops.jpg" class="d-block" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Project 2</h5>
+                            <p>...and another one</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="fractal_tree.jpg" class="d-block" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Project 3</h5>
+                            <p>...and another one</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#project-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#project-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>-->
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
