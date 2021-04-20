@@ -100,13 +100,14 @@ a.arrows-down {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin: 0px auto;
 }
 a.arrows-down span {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 96px;
-    height: 96px;
+    width: 10vw;
+    height: 10vw;
     margin-left: -12px;
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;

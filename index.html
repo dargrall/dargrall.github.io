@@ -28,8 +28,12 @@
     <div class="container">
         <section id="landing" class="row">
             <div class="col text-center align-elements-center">
-                <h1 class="pop-in display-1">Welcome to my Homepage!</h1></br>
-                <a class="pop-in arrows-down" href="#about"><span></span><span></span><span></span></a>
+                <div class="row align-elements-center">
+                    <h1 class="pop-in display-1 col-12">Welcome to my Homepage!</h1></br>
+                    <div col-4>
+                        <a class="pop-in arrows-down" href="#about"><span></span><span></span><span></span></a>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="about" class="row align-items-center">
@@ -46,23 +50,23 @@
             <div class="col-8">
                 <h1>Here is a list of projects I am working on at the moment:</h1>
                 <div class="row">
-                    <div class="col-sm-6">
-                        <div class="card">
+                    <div class="col-sm-4">
+                        <div class="card h-100">
                             <img src="fractal_tree.jpg" class="card-image-top" alt="..."/>
-                            <div class="card-body">
-                                <h5 class="card-title">p5.js</h5>
-                                <p class="card-text">Small creative coding projects using the p5.js library.</p>
-                                <a href="#projects-p5js" class="btn btn-primary">Show more</a>
+                            <div class="card-body border-top">
+                                <h5 class="card-title h-15">p5.js</h5>
+                                <p class="card-text h-40">Small creative coding projects using the p5.js library.</p>
+                                <a href="#projects-p5js" class="btn btn-primary h-15">Show more</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="card">
+                    <div class="col-sm-4">
+                        <div class="card h-100">
                             <img src="timetable_blue.svg" class="card-image-top" alt="..."/>
-                            <div class="card-body">
-                                <h5 class="card-title">Semestertimetable</h5>
-                                <p class="card-text">Web-Application for planning my studies.</p>
-                                <a href="#" class="btn btn-primary">Show more</a>
+                            <div class="card-body border-top">
+                                <h5 class="card-title h-15">Semestertimetable</h5>
+                                <p class="card-text h-40">Web-Application for planning my studies.</p>
+                                <a href="#" class="btn btn-primary h-15">Show more</a>
                             </div>
                         </div>
                     </div>
@@ -116,6 +120,22 @@
                 </button>
             </div>
         </section>-->
+        <section id="music" class="row align-items-center">
+            <div class="col-4">
+                <h1 class="text-center display-1">Music</h1>
+                <img class="headerIcon"src="icons/music-player.svg">
+            </div>
+            <div class="col-8">
+            </div>
+        </section>
+        <section id="whatdoumeme" class="row align-items-center">
+            <div class="col-8">
+            </div>
+            <div class="col-4">
+                <h1 class="text-center display-1">Games</h1>
+                <img class="headerIcon"src="icons/joystick.svg">
+            </div>
+        </section>
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
