@@ -135,18 +135,28 @@
             <div class="col-8">
             </div>
         </section>
-        <section id="whatdoumeme" class="row align-items-center">
+        <section id="games" class="row align-items-center">
             <div class="col-8">
-                <p>
-                    "What do you Meme?" is a really fun game to play with your friend. I created a simple Word template
-                    to make your own cards for the game.
-                </p>
-                <a href="whatdoumeme_template.docx" download="whatdoumeme_template.docx"><button type="button" class="btn btn-primary"><i class="bi-download"></i> Download</button></a>
-                <p>
-                    <a href="phaser.html">Phaser</a>
-                </p>
+                <div class="row">
+                    <h1>What do you Meme?</h1>
+                    <p>
+                        "What do you Meme?" is a really fun game to play with your friend. I created a simple Word template
+                        to make your own cards for the game.
+                    </p>
+                    <a href="whatdoumeme_template.docx" download="whatdoumeme_template.docx"><button type="button" class="btn btn-primary"><i class="bi-download"></i> Download</button></a>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Phaser</h1>
+                        <p>
+                            Phaser is a JS library for creating 2D Browser Games. The example below shows the game
+                            created by following the "Getting started" guide from the official website.
+                        </p>
+                        <div id="phaser_canvas"></div>
+                    </div>
+                </div>
             </div>
-            <div id="games" class="col-4">
+            <div class="col-4">
                 <h1 class="text-center display-1">Games</h1>
                 <img class="headerIcon"src="icons/joystick.svg">
             </div>
@@ -157,6 +167,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
     <!-- Optional JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.54.0/dist/phaser.js"></script>
+    <script src="phaser/phaser_game.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
