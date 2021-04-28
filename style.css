@@ -34,8 +34,9 @@ body::-webkit-scrollbar-corner {
 
 
 #background {
-    background-image: url("keyboard.jpg");
+    background-image: url("media/code.jpg");
     background-size: cover;
+    filter: grayscale(80%);
     height: 100vh;
 }
 .nav {
@@ -72,6 +73,10 @@ section {
     width: 100%;
     display: block;
     opacity: 0;
+}
+
+#landingLogo {
+    padding-top: 14vh;
 }
 
 .sectionHeader {

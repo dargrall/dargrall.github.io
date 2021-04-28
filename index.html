@@ -13,8 +13,7 @@
     <title>dargrall</title>
 </head>
 <body>
-
-    <ul class="nav fixed-top justify-content-left">
+    <ul class="nav fixed-top justify-content-center">
         <li class="nav-item">
             <a class="nav-link active" href="#landing">Home</a>
         </li>
@@ -30,13 +29,23 @@
         <li class="nav-item">
             <a class="nav-link" href="#games">Games</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#imprint">Imprint</a>
+        </li>
     </ul>
     <div id="background"></div>
     <div class="container">
         <section id="landing" class="row">
             <div class="col text-center align-elements-center">
                 <div class="row">
-                    <h1 class="pop-in display-1 col-12">Hello<br/>there!</h1></br>
+                    <div class="col-12"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4"></div>
+                    <img id="landingLogo" src="icons/dargrall_logo.svg" class="pop-in col-4"/>
+                    <div class="col-4"></div>
+                </div>
+                <div class="row">
                     <div class="col-4"></div>
                     <a class="col-4 pop-in arrows-down align-elements-center" href="#about"><span></span><span></span><span></span></a>
                     <div class="col-4"></div>
@@ -46,7 +55,7 @@
         <section id="about" class="row align-items-center">
             <div class="col-4">
                 <h1 id="aboutHeader" class="text-center display-1">About me</h1>
-                <img class="headerIcon"src="icons/person-lines-fill.svg">
+                <img class="headerIcon"src="icons/bootstrap/person-lines-fill.svg">
             </div>
             <div class="text-center col-8">
                 <h1>In progress...</h1>
@@ -59,7 +68,7 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="card h-100">
-                            <img src="fractal_tree.jpg" class="card-image-top" alt="..."/>
+                            <img src="media/fractal_tree.jpg" class="card-image-top" alt="..."/>
                             <div class="card-body border-top">
                                 <h5 class="card-title h-15">p5.js</h5>
                                 <p class="card-text h-40">Small creative coding projects using the p5.js library.</p>
@@ -69,7 +78,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="card h-100">
-                            <img src="timetable_blue.svg" class="card-image-top" alt="..."/>
+                            <img src="media/timetable_blue.svg" class="card-image-top" alt="..."/>
                             <div class="card-body border-top">
                                 <h5 class="card-title h-15">Semestertimetable</h5>
                                 <p class="card-text h-40">Web-Application for planning my studies.</p>
@@ -81,7 +90,7 @@
             </div>
             <div class="col-4">
                 <h1 class="text-center display-1">Projects</h1>
-                <img class="headerIcon"src="icons/card-list.svg">
+                <img class="headerIcon"src="icons/bootstrap/card-list.svg">
             </div>
         </section>
         <!--<section id="projects-p5js">
@@ -131,7 +140,7 @@
         <section id="music" class="row align-items-center">
             <div class="col-4">
                 <h1 class="text-center display-1">Music</h1>
-                <img class="headerIcon"src="icons/music-player.svg">
+                <img class="headerIcon"src="icons/bootstrap/music-player.svg">
             </div>
             <div class="col-8">
                 <h3 class="text-center">
@@ -151,20 +160,39 @@
                     </p>
                     <a href="whatdoumeme_template.docx" download="whatdoumeme_template.docx"><button type="button" class="btn btn-primary"><i class="bi-download"></i> Download</button></a>
                 </div>
-                <div class="row">
+                <!--<div class="row">
                     <div class="col-12">
                         <h1>Phaser</h1>
                         <p>
                             Phaser is a JS library for creating 2D Browser Games. The example below shows the game
                             created by following the "Getting started" guide from the official website.
                         </p>
-                        <!--<iframe src="phaser.html" width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
+                        &lt;!&ndash;<iframe src="phaser.html" width="800" height="600" frameborder="0" scrolling="no"></iframe>&ndash;&gt;
                     </div>
-                </div>
+                </div>-->
             </div>
             <div class="col-4">
                 <h1 class="text-center display-1">Games</h1>
-                <img class="headerIcon"src="icons/joystick.svg">
+                <img class="headerIcon"src="icons/bootstrap/joystick.svg">
+            </div>
+        </section>
+        <section id="imprint" class="row align-items-center">
+            <div class="col-4">
+                <h1 id="imprintHeader" class="text-center display-1">Imprint</h1>
+                <img class="headerIcon"src="icons/bootstrap/journal-check.svg">
+            </div>
+            <div class="text-center col-8">
+                <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+                <p>
+                    Darian Gralle<br />
+                    Fr&ouml;belweg<br />
+                    1a<br />
+                    38110 Braunschweig
+                </p>
+                <h2>Kontakt</h2>
+                <p>
+                    E-Mail: dargrall.github@gmail.com
+                </p>
             </div>
         </section>
     </div>
