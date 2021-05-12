@@ -31,6 +31,9 @@
         <li class="nav-item">
             <a class="nav-link" href="#imprint">Imprint</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#activity">Activity</a>
+        </li>
     </ul>
     <div id="background"></div>
     <div class="container">
@@ -65,17 +68,57 @@
             <div class="col-8">
                 <h3 class="text-left">Here is a list of projects<br/> I am working on at the moment:</h3>
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-8">
                         <div class="card h-100">
                             <img src="media/fractal_tree.jpg" class="card-image-top" alt="..."/>
                             <div class="card-body border-top">
                                 <h5 class="card-title h-15">p5.js</h5>
                                 <p class="card-text h-40">Small creative coding projects using the p5.js library.</p>
-                                <!--<a href="#projects-p5js" class="btn btn-primary h-15">Show more</a>-->
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Circular motion
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="w-100 align-items-center">
+                                                    <iframe src="p5js/circular_motion.html" width="400" height="400" scrolling="no"></iframe>
+                                                </div>
+                                                Playing around with trigonometric functions. First slide controls the sine and the second cosine
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Coming soon...
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                -
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Coming soon...
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                -
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-8">
                         <div class="card h-100">
                             <img src="media/timetable_blue.svg" class="card-image-top" alt="..."/>
                             <div class="card-body border-top">
@@ -175,11 +218,73 @@
                 <img class="headerIcon"src="icons/bootstrap/joystick.svg">
             </div>
         </section>
-        <section id="imprint" class="row align-items-center">
+        <section id="activity" class="row align-items-center">
             <div class="col-4">
-                <h1 id="imprintHeader" class="text-center display-1">Imprint</h1>
-                <img class="headerIcon"src="icons/bootstrap/journal-check.svg">
+                <h1 id="activityHeader" class="text-center display-1">Activity</h1>
+                <img class="headerIcon"src="icons/bootstrap/calendar-check.svg">
             </div>
+            <div class="text-center col-8">
+                This activity planner asks some simple questions and then generates a template text that you can
+                copy and send via mail, messenger or whatever you like.<br/><br/>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Plan activity
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Activity planner</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="activityPlanner">
+                                    <div class="form-check">
+                                        <div class="alert alert-primary mb-3">
+                                            Click into each box to fill it in (Prefilled with placeholders)
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="floatingOwnName" placeholder="Firstname Lastname">
+                                            <label for="floatingOwnName">Your name</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="floatingOtherNames" placeholder="Names">
+                                            <label for="floatingOtherNames">Your friends name or names separated by commas</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="floatingGreeting" placeholder="Hello there, Whazzuuuuup, Hai, How you doin'">
+                                            <label for="floatingGreeting">Hello there, Whazzuuuuup, Hai, How you doin'</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="floatingActivity" placeholder="Skateboard, Inliner, Basketball, Soccer, Slackline, Juggling, ...">
+                                            <label for="floatingActivity">Skateboarding, Inlinerskating, Basketball, Soccer, Slacklining, Juggling...</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="floatingPlace" placeholder="Hildesheim, Braunschweig, Hannover...">
+                                            <label for="floatingPlace">Hildesheim, Braunschweig, Hannover...</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input id="date" type="date"/><input id="time" type="time"/>
+                                        </div>
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Generated text" id="floatingGeneratedText" style="height: 100px"></textarea>
+                                            <label for="floatingGeneratedText"></label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" onclick="copyToClipboard()">Copy generated text to clipboard</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="imprint" class="row align-items-center">
             <div class="text-center col-8">
                 <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
                 <p>
@@ -192,6 +297,10 @@
                 <p>
                     E-Mail: dargrall.github@gmail.com
                 </p>
+            </div>
+            <div class="col-4">
+                <h1 id="imprintHeader" class="text-center display-1">Imprint</h1>
+                <img class="headerIcon"src="icons/bootstrap/journal-check.svg">
             </div>
         </section>
     </div>

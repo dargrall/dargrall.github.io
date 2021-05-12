@@ -6,13 +6,17 @@ let yslider;
 function setup() {
     pos = createVector(1,1);
 
+    textSize(32);
+    fill(255, 255, 255, 100);
+    text('sin:', 50, 50);
     xslider = createSlider(1, 50, 1);
-    xslider.position(10,10);
+    xslider.position(40,10);
 
+    text('cos:', 10, 40);
     yslider = createSlider(1, 50, 1);
-    yslider.position(10,40);
+    yslider.position(200,10);
 
-    createCanvas(300, 300);
+    createCanvas(400, 400);
 
 }
 
@@ -20,7 +24,7 @@ function draw() {
     background(30);
     stroke('green');
 
-    currentPos = createVector(map(sin(pos.x), -1, 1, 50, 250), map(cos(pos.y), -1, 1, 50, 250));
+    currentPos = createVector(map(sin(pos.x), -1, 1, 100, 300), map(cos(pos.y), -1, 1, 100, 300));
 
     currentPos.z = 0;
     trace.push(currentPos);
