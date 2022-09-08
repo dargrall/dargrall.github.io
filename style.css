@@ -208,7 +208,7 @@ a.pop-in {
 }
 
 /* Container around content */
-.container {
+.about .col-8 .container {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
