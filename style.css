@@ -32,6 +32,9 @@ body::-webkit-scrollbar-corner {
     background: transparent;        /* color of the tracking area */
 }
 
+.row {
+    width: 80%;
+}
 
 #background {
     background-image: url("media/code.jpg");
