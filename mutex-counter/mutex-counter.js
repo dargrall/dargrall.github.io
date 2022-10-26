@@ -1,7 +1,29 @@
-console.log("mutex-counter.js loaded...");
 let counter = 0;
+let preString = "";
+let preInput, startInput, generateBtn, numberSpan;
+
 function generate() {
-    console.log(++counter);
+    if (startInput.value != "") {
+        counter = startInput.value;
+        startInput.value = null;
+    }
+    console.log(counter);
+    //console.log(preInput.value + ++counter);
+    numberSpan.innerHTML = preInput.value + ++counter;
+
 }
-let generateBtn = document.getElementById('generate');
-generateBtn.onclick(generate);
+
+window.onload = function() {
+    console.log("mutex-counter.js loaded...");
+    
+    preInput = document.getElementById('fixedString');
+    startInput = document.getElementById('counterStart');
+    generateBtn = document.getElementById('generate');
+    numberSpan = document.getElementById('number');
+
+    //console.log(generateBtn);
+    //generateBtn.onclick((event) => {
+    //    event.preventDefault();
+    //    generate();
+    //});
+};
