@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="javascript" href="mutex-counter.js"/>
+        <link rel="stylesheet" href="mutex-counter.css"/>
+    </head>
+    <body>
+        <form id="mutex-counter" class="container">
+            <h1>Nummer ziehen:</h1>
+            <div>
+                <label for="fixedString">Feststehender Text:</label>
+                <input id="fixedString" type="text"/>
+            </div>
+            <div>
+                <label for="counterStart">Zähler:</label>
+                <input id="counterStart" type="number"/>
+            </div>
+            <button id="generate">Nummer ziehen</button>
+        </form>
+
+
+        <script>
+            let counter = 0;
+            function generate() {
+                console.log(++counter);
+            }
+            let generateBtn = document.getElementById('generate');
+            generateBtn.onclick(generate);
+        </script>
+    </body>
+</html>
